@@ -1,0 +1,5 @@
+# Ignored Files and Folders
+node_modules/
+env/
+media/
+__pycache__/

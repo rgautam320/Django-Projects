@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.App {
+	background-color: azure;
+	height: 90vh;
+	display: grid;
+	place-items: center;
+}
+
+.card {
+	height: 600px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 30px 0 !important;
+	border-radius: 25px !important;
+	box-shadow: 0 0 6px 6px grey;
+}
+
+.my-heading {
+	line-height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 3rem;
+	color: orangered;
+	background-color: bisque;
+	margin-bottom: 10px;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+}
+
+.inputDiv {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(177, 253, 196);
+	padding: 10px;
+	height: 65px;
+	align-items: center;
+}
+
+.inputDiv input {
+	width: 95%;
+	height: 50px;
+	margin-right: 20px;
+	font-weight: bolder;
+	border: none;
+	background-color: transparent;
+	text-align: center;
+	font-size: 30px;
+}
+
+.inputDiv input:focus {
+	outline: none;
+}
+
+hr {
+	height: 3px;
+	background-color: rgb(0, 217, 255);
+}
+
+.forhr {
+	background-color: transparent;
+	height: 60px;
+	width: 90%;
+}
+
+.btnDiv {
+	background-color: transparent;
+}
+
+.btn {
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	color: white;
+	font-weight: bolder;
+	transition: all 1s;
+}
+
+.btn:focus {
+	outline: none;
+	border: none;
+}
+
+.Output {
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+
+.each-todo {
+	border-radius: 5px;
+	padding: 4px 8px;
+	-webkit-box-shadow: 0 0 5px 2px #fff;
+	-moz-box-shadow: 0 0 5px 2px #fff;
+	box-shadow: 0 0 6px 1px rgb(59, 52, 52);
+}
+
+@media (max-width: 576px) {
+	.card {
+		width: 400px;
+		height: auto;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.my-heading {
+		font-size: 2.5rem;
+		border-radius: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	.card {
+		width: 350px;
+	}
+	.my-heading {
+		font-size: 2rem;
+		border-radius: 0;
+	}
+}
