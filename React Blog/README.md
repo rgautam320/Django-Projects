@@ -10,7 +10,7 @@ Pull the repository into your device and run it as you used to run Django Applic
 
 OR You can simply go through the below link.
 
-#### [Link](https://rgautam320-blog-react.herokuapp.com)
+### [Link](https://rgautam320-blog-react.herokuapp.com)
 
 ## User View:
 
