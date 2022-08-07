@@ -1,0 +1,82 @@
+/* About  */
+.container-fluid
+{
+    padding: 10px 40px;
+    background-color: transparent;
+    height: auto;
+}
+
+.container-fluid p 
+{
+    text-align: justify;
+}
+
+.row
+{
+    background-color: transparent;
+    height: auto;
+}
+.columns
+{
+    border: transparent;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
+}
+.subheading
+{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    font-size: 35px;
+    text-decoration: none;
+}
+.aboutmephoto
+{
+    box-sizing: border-box;
+    display: flex;
+    padding: 10px;
+}
+.aboutmephoto img 
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.myname
+{
+    width: 100%;
+    padding: 5px;
+}
+.metxt
+{
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;  
+    color: greenyellow;
+}
+#name
+{
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+}
+#rate
+{
+    margin-bottom: 40px;
+}
+.prog 
+{
+    margin-top: 20px;
+    height: 70px;
+}
+.file
+{
+    width: 100%;
+}
+progress
+{
+    background-color: rgb(255, 10, 10);
+    border-radius: 25%;
+}

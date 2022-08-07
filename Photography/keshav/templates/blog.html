@@ -1,0 +1,54 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} Keshav Gautam | Blog {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/styleblog.css' %}">
+{% endblock %}
+
+{% block body %}
+<section class="blog">
+    <div class="container-xl">
+        <h1 class="text-center pt-3 text-capitalize text-danger display-4 font-weight-bolder"
+            style="text-shadow: 0 0 3px green;">Blog</h1>
+        <hr>
+        <div class="row">
+            {% for image in landscape %}
+            <div class="col-12 col-sm-6 col-md-4 columns">
+                <div class="description_part">
+                    <img src="/media/{{image.blog_img}}" alt="Image 1" class="img-fluid">
+                    <p class="date">{{image.date}}</p>
+                    <h4 class="description">{{image.blog_img_name}}</h4>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row mt-2 mb-5">
+            {% for image in portrait %}
+            <div class="col-12 col-sm-6 col-md-3 px-2 columns">
+                <div class="description_part">
+                    <img src="/media/{{image.blog_img}}" alt="Image 1" class="img-fluid">
+                    <p class="date">{{image.date}}</p>
+                    <h4 class="description">{{image.blog_img_name}}</h4>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="footer">
+        <h5 id="textfooter">Copyright &copy; 2020 All Right Reserved | <a href="https://www.facebook.com/rgautam320"
+                target="_blank">Rajan Gautam</a></h5>
+    </div>
+</footer>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/codeblog.js' %}"></script>
+{% endblock %}

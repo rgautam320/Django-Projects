@@ -1,0 +1,53 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} Keshav Gautam | Gallery {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/stylegallery.css' %}">
+{% endblock %}
+
+
+{% block body %}
+<section class="gallery">
+    <h1 class="text-center pt-4 text-capitalize text-danger display-4 font-weight-bolder"
+        style="text-shadow: 0 0 3px green;">Gallery</h1>
+    <hr>
+    <div class="container-fluid">
+        <div class="row" id="row1">
+            {% for image in landscape %}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 columns">
+                <div class="galleryimg">
+                    <img src="/media/{{image.gallery_img}}" alt="Image 1" class="img-fluid2">
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <div class="row" id="row2">
+            {% for image in portrait %}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 columns2">
+                <div class="galleryimg">
+                    <img src="/media/{{image.gallery_img}}" alt="Image 1" class="img-fluid1">
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="footer">
+        <h5 id="textfooter">Copyright &copy; 2020 All Right Reserved | <a href="https://www.facebook.com/rgautam320"
+                target="_blank">Rajan Gautam</a></h5>
+    </div>
+</footer>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/codegallery.js' %}"></script>
+{% endblock %}

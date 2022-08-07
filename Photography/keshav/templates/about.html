@@ -1,0 +1,83 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} Keshav Gautam | About {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/styleabout.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<section class="about">
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 columns">
+                <h3 class="subheading">About Me</h3>
+                <hr>
+                <div class="aboutmephoto">
+                    <img src="/media/{{detail.0.about_icon}}" alt="Image Icon">
+                    <div class="myname">
+                        <h5 id="name" class="metxt">Keshav Gautam</h5>
+                        <p id="deg" class="metxt">Photographer</p>
+                    </div>
+                </div>
+                <div class="des">
+                    <p style="line-height: 40px;">{{detail.0.about_keshav}}</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 columns">
+                <h3 class="subheading">Experience</h3>
+                <hr>
+                <div class="des">
+                    <h5>Nature Photography</h5>
+                    <p>{{detail.0.exp_nature}}</p>
+                    <h5>Event Photography</h5>
+                    <p>{{detail.0.exp_event}}</p>
+                    <h5>Portrait Photography</h5>
+                    <p>{{detail.0.exp_portrait}}</p>
+                    <h5>Life Photography</h5>
+                    <p>{{detail.0.exp_life}}</p>
+                    <h5>Black and White Photography</h5>
+                    <p>{{detail.0.exp_blackwhite}}</p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 columns">
+                <h3 class="subheading">Skills</h3>
+                <hr>
+                <p id="rate">{{detail.0.skills_info}}</p>
+                <div class="prog">
+                    <label for="file">Development</label>
+                    <progress class="file" value="{{detail.0.skills_dev}}" max="100"></progress>
+                </div>
+                <div class="prog">
+                    <label for="file">Photography</label>
+                    <progress class="file" value="{{detail.0.skills_photography}}" max="100"></progress>
+                </div>
+                <div class="prog">
+                    <label for="file">Dynamic</label>
+                    <progress class="file" value="{{detail.0.skills_dynamic}}" max="100"></progress>
+                </div>
+                <div class="prog">
+                    <label for="file">Classic</label>
+                    <progress class="file" value="{{detail.0.skills_classic}}" max="100"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block footer %}
+<footer>
+    <div class="footer">
+        <h5 id="textfooter">Copyright &copy; 2020 All Right Reserved | <a href="https://www.facebook.com/rgautam320"
+                target="_blank">Rajan Gautam</a></h5>
+    </div>
+</footer>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'js/codeabout.js' %}"></script>
+{% endblock %}

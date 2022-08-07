@@ -1,0 +1,19 @@
+{% extends 'basic.html' %}
+
+{% load static %}
+
+{% block title %} Keshav Gautam | Home {% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endblock %}
+
+
+{% block body %}
+
+<section class="home">
+    <h1 id="inspire">&OpenCurlyDoubleQuote;{{detail.0.home_saying}}&CloseCurlyDoubleQuote;</h1>
+    <h2 id="keshavgautam">{{detail.0.home_name}}</h2>
+    <h2 id="photography">{{detail.0.home_heading}}</h2>
+    <a target="_blank" class=""><button id="portfolio" type="submit">Portfolio</button></a>
+</section>
+{% endblock %}

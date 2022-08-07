@@ -1,0 +1,270 @@
+/* Gallery */
+.container-fluid
+{
+    background-color: transparent;
+    width: 100%;
+    margin: 5px auto;
+    height: auto;
+    display: block;
+    padding: 20px 20px;
+}
+.row
+{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#row1
+{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+#row2
+{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.columns
+{
+    background-color: transparent;
+    border: none;
+    height: 200px;
+    padding: 5px;
+}
+.columns2
+{
+    background-color: transparent;
+    border: none;
+    height: 300px;
+    padding: 5px;
+}
+.img-fluid2
+{
+    border-radius: 16px;
+    width: 242px;
+    height: 185px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.img-fluid1
+{
+    border-radius: 16px;
+    width: 220px;
+    height: 293.33px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.img-fluid2:hover
+{
+    transform: scale(1.03);
+}
+.img-fluid1:hover
+{
+    transform: scale(1.0);
+}
+.galleryimg
+{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px)
+{
+    .gallery
+    {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Media Query Gallery  */
+@media (min-width: 992px)
+{
+    .img-fluid2
+    {
+        width: 214.36px;
+        height: 160px;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 172px;
+    }
+    .columns2
+    {
+        height: 275px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 1100px)
+{
+    .img-fluid2
+    {
+        width: 236.36px;
+        height: 176.18px;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 190px;
+    }
+    .columns2
+    {
+        height: 275px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 1200px)
+{
+    .img-fluid2
+    {
+        width: 260px;
+        height: 194.5px;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 210px;
+    }
+    .columns2
+    {
+        height: 275px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}
+@media (min-width: 1300px)
+{
+    .img-fluid2
+    {
+        width: 285.11px;
+        height: 214.87px;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 230px;
+    }
+    .columns2
+    {
+        height: 275px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 1400px)
+{
+    .img-fluid2
+    {
+        width: 313.63px;
+        height: 236.36px;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 250px;
+    }
+    .columns2
+    {
+        height: 275px;
+        padding: 5px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}
+
+@media (min-width: 1500px)
+{
+    .img-fluid2
+    {
+        border-radius: 16px;
+        width: 345px;
+        height: 260px;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    .img-fluid1
+    {
+        width: 183.33px;
+        height: 244.44px;
+    }
+    .columns
+    {
+        height: 275px;
+    }
+    .columns2
+    {
+        height: 275px;
+    }
+    .img-fluid2:hover
+    {
+        transform: scale(1.1);
+    }
+    .img-fluid1:hover
+    {
+        transform: scale(1.05);
+    }
+}

@@ -1,0 +1,64 @@
+/* Blog */
+.container-xl
+{
+    background-color: transparent;
+    width: 100vw;
+    margin: auto;
+    height: auto;
+    display: block;
+    padding: 20px 0px;
+}
+.row
+{
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.columns
+{
+    background-color: transparent;
+    border: none;
+    height: 300px;
+    padding: 5px;
+}
+.img-fluid
+{
+    border-radius: 16px;
+    height: 286px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.img-fluid:hover
+{
+    transform: scale(1.03);
+}
+.description_part
+{
+    position: relative;
+    margin-bottom: 30px;
+}
+.description_part h4
+{
+    width: 100%;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+}
+.description_part p
+{
+    width: 100%;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 14px;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+}

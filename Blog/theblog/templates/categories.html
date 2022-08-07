@@ -1,0 +1,53 @@
+{% extends 'basic.html' %}
+
+{% block title %}Rajan Blog | Categories{% endblock %}
+
+{% block content %}
+<h1 class="heading">{{cats}} Blogs</h1>
+<ul>
+    <div class="row">
+        {% for post in category_posts %}
+        <div class="col-md-3 col-sm-2 col-12">
+            <li style="list-style-type: none;">
+
+                <div class="card">
+                    <img class="card-img-top" src="{{post.header_image.url}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{post.title}}</h5>
+                        <h6 class="text-capitalize">Category: <a href="{% url 'category' post.category %}">{{post.category}}</a>
+                        </h6>
+                        <strong>
+                            <p class="card-text">{{post.author.first_name}}
+                                {{post.author.last_name}}</p>
+                        </strong>
+                        <strong>
+                            <small>
+                                <small>
+                                    <p class="card-text text-capitalize">{{ post.post_date }}</p>
+                                </small>
+                            </small>
+                        </strong>
+
+                        <p class="card-text text-justify">
+                            {{post.short_desc|slice:":30"}}...</p>
+
+                        <div class="d-flex justify-content-around">
+                            <a href="{% url 'article_detail' post.pk %}" class="btn btn-primary">Read </a>
+
+                            {% if user.is_authenticated %}
+                            {% if post.author.id == user.id or user.id == 1 %}
+                            <a href="{% url 'update_post' post.pk %}" class="btn btn-primary">Edit </a>
+
+                            <a href="{% url 'delete_post' post.pk %}" class="btn btn-primary">Delete </a>
+
+                            {% endif %}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </div>
+        {% endfor %}
+    </div>
+</ul>
+{% endblock %}
