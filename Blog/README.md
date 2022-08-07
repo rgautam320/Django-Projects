@@ -6,7 +6,7 @@ This project was made by Rajan Gautam using Django and Bootstrap.
 
 ## Steps to Run the Application
 
-You can follow this link: https://rgautam320-blog.herokuapp.com
+You can follow this link: [Live Link](https://rgautam320-blog.herokuapp.com)
 
 ### OR
 
