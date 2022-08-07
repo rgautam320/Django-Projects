@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="{% static 'css/base.css' %}" rel="stylesheet" media="all">
+</head>
+<body>
+  {% include "blood/navbar.html" %}
+  <div class="container logout-page d-flex justify-content-center align-items-center logout-center">
+    <div>
+      <div class="logo">
+        <h2 class="text-center">
+          <img src="{% static 'image/logout.png' %}" alt="logo">
+        </h2>
+      </div>
+      <div class="login-icon"> <i class="fa fa-sign-out"></i> </div>
+      <h1 class="font-semibold text-center" style="font-size:52px">
+        You Have Been Logged Out</h1>
+      <div class="form-group">
+        <div class="col-md-12">
+          <h4 class="text-center mgbt-xs-20">Thank you for using
+            our website</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include "blood/footer.html" %}
+
+</body>
+
+</html>

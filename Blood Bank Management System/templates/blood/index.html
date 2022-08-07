@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+  <title>Blood Bank Management System</title>
+  <link href="{% static 'css/base.css' %}" rel="stylesheet" media="all">
+</head>
+
+<body>
+  {% include "blood/navbar.html" %}
+  <br>
+  <section class="home-section">
+    <img src="{% static 'image/homepage.jpg' %}" alt="Home Banner">
+  </section>
+
+  <div class="lead">
+    <div>
+      <p class="text-center">“Sometimes money cannot save life but donated blood
+        can.”
+      </p>
+      <p class="text-center">Cloud Lab - CE19</p>
+    </div>
+  </div>
+  {% include "blood/footer.html" %}
+</body>
+
+</html>
